@@ -1,0 +1,134 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Literature check",
+            "prompt": "who introduced RRSVM? was it Maclin in 2007?",
+            "llm_response_used": "Partially",
+            "response_summary": "Maclin et al. in 2007.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 1.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Understanding baseline",
+            "prompt": "what was the main flaw of RRSVM compared to arkSVM?",
+            "llm_response_used": "Partially",
+            "response_summary": "It could only translate boundaries, not rotate.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 1.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Finding edge cases",
+            "prompt": "when would RRSVM beat arkSVM? like when the angle is already perfect?",
+            "llm_response_used": "Partially",
+            "response_summary": "When the advice angle is already perfect, arkSVM overcomplicates the math.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 1.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Interpreting figures",
+            "prompt": "how does Fig 2 in the paper show the difference between rotation and translation?",
+            "llm_response_used": "Partially",
+            "response_summary": "Left side shows parallel shifts, right shows tilted lines.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 1.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 5,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Outputs the requested JSON.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 1.3",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "who introduced RRSVM? was it Maclin in 2007?",
+            "why_important": "Key prompt to resolve issues regarding Task 1.3"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "what was the main flaw of RRSVM compared to arkSVM?",
+            "why_important": "Key prompt to resolve issues regarding Task 1.3"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "when would RRSVM beat arkSVM? like when the angle is already perfect?",
+            "why_important": "Key prompt to resolve issues regarding Task 1.3"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "how does Fig 2 in the paper show the difference between rotation and translation?",
+            "why_important": "Key prompt to resolve issues regarding Task 1.3"
+        },
+        {
+            "rank": 5,
+            "interaction_id": 5,
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "why_important": "Key prompt to resolve issues regarding Task 1.3"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Schema checking",
+            "prompt": "i am making the llm disclosure json. is the structure i am using looking good so far? check if i am missing some point.",
+            "llm_response_used": "Partially",
+            "response_summary": "The structure is perfectly compliant with the MidSem rules, covering all fields.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 4.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Verifying definitions",
+            "prompt": "if i used the code exactly as u gave but just changed a variable name, does that count as verbatim true?",
+            "llm_response_used": "Partially",
+            "response_summary": "Yes, flag it as True and explain the variable renaming in the modification field.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 4.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Checking instructions",
+            "prompt": "how do i handle the top_5_prompts if i only had 4 prompts for this task?",
+            "llm_response_used": "Partially",
+            "response_summary": "Include all 4 of them as instructed.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 4.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Compiling history",
+            "prompt": "can u give me all the prompts we discussed for this task in the json format for my midsem submission?",
+            "llm_response_used": "Partially",
+            "response_summary": "Output the final JSON array.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 4.2",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "i am making the llm disclosure json. is the structure i am using looking good so far? check if i am missing some point.",
+            "why_important": "Key prompt to resolve issues regarding Task 4.2"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "if i used the code exactly as u gave but just changed a variable name, does that count as verbatim true?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.2"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "how do i handle the top_5_prompts if i only had 4 prompts for this task?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.2"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "can u give me all the prompts we discussed for this task in the json format for my midsem submission?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.2"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

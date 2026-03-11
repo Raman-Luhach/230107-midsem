@@ -1,0 +1,194 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Coding LP Mapping",
+            "prompt": "how do i formulate the KBSVM Estimation step in scipy.linprog? The bounds are tricky.",
+            "llm_response_used": "Yes",
+            "response_summary": "Map weights, slack, and dual advice variables to a 1D vector c.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true,
+            "student_modification": "I had to explicitly set bounds=(None, None) for w and b because scipy defaults to >= 0."
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Debugging LP solver",
+            "prompt": "my linprog says 'infeasible'. what should i check?",
+            "llm_response_used": "Partially",
+            "response_summary": "Check if your labels are strictly +1/-1 or if the matrices D_i mismatch sizes.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Coding F_i logic",
+            "prompt": "now for the Refinement LP, how do i flatten the F_i matrix to pass to linprog?",
+            "llm_response_used": "Yes",
+            "response_summary": "Flatten F_i and use Kronecker products for constraints.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true,
+            "student_modification": "The code given was almost correct, I just verified the dimensions and used it as is."
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Understanding stopping logic",
+            "prompt": "how does the stopping criteria (sum of L1 norms < epsilon) work in python?",
+            "llm_response_used": "Partially",
+            "response_summary": "Calculate absolute differences between iterations sum.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 5,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Coding Algorithm 1",
+            "prompt": "provide a python loop for the Alternating LP.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided a while loop with estimation/refinement steps.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true,
+            "student_modification": "Integrated it but added my own print statements to track the objective function drop."
+        },
+        {
+            "interaction_id": 6,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Analyzing output",
+            "prompt": "why is F_i mostly zero at the end of my training?",
+            "llm_response_used": "Partially",
+            "response_summary": "Your rules are axis-aligned, so rotation isn't needed.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 7,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Plotting results",
+            "prompt": "write a matplotlib snippet to plot testing error vs training size like figure 3.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided matplotlib code.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true,
+            "student_modification": "Code was perfectly fine, I didn't make any changes."
+        },
+        {
+            "interaction_id": 8,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Tuning parameters",
+            "prompt": "what hyperparameters should i use for nu and mu to start?",
+            "llm_response_used": "Partially",
+            "response_summary": "Start with 0.1 for both.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 9,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Output JSON representation.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "how do i formulate the KBSVM Estimation step in scipy.linprog? The bounds are tricky.",
+            "why_important": "Key prompt to resolve issues regarding Task 2.2"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "my linprog says 'infeasible'. what should i check?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.2"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "now for the Refinement LP, how do i flatten the F_i matrix to pass to linprog?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.2"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "how does the stopping criteria (sum of L1 norms < epsilon) work in python?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.2"
+        },
+        {
+            "rank": 5,
+            "interaction_id": 5,
+            "prompt": "provide a python loop for the Alternating LP.",
+            "why_important": "Key prompt to resolve issues regarding Task 2.2"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

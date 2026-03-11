@@ -1,0 +1,165 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Selecting failure scenario",
+            "prompt": "i need a failure mode for arkSVM. what's a good toy dataset in sklearn that violates linearity?",
+            "llm_response_used": "Partially",
+            "response_summary": "sklearn.datasets.make_circles",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Generating data",
+            "prompt": "write python code to generate make_circles with some noise.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided code.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": true,
+            "student_modification": "Used as is, no changes made."
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Coding custom advice",
+            "prompt": "how do i define 'expert advice' for the inner circle if the model only understands straight lines?",
+            "llm_response_used": "Yes",
+            "response_summary": "Draw a bounding box using 4 linear constraints.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": true,
+            "student_modification": "The bounding box concept was great, I modified the coordinate values to fit my make_circles data."
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Analyzing failure",
+            "prompt": "why is the error 47% on make_circles?",
+            "llm_response_used": "Partially",
+            "response_summary": "Because a straight line physically cannot separate inner from outer rings.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 5,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Plotting decision boundary",
+            "prompt": "how do i plot the decision boundary with plt.contourf?",
+            "llm_response_used": "Yes",
+            "response_summary": "Use plt.contourf with the learned w and b.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": true,
+            "student_modification": "Code was correct, no changes made."
+        },
+        {
+            "interaction_id": 6,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Drafting future work",
+            "prompt": "can this failure be fixed with the kernel trick?",
+            "llm_response_used": "Partially",
+            "response_summary": "Yes, applying the kernel trick to the polyhedral constraints.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 7,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Output JSON representation.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "i need a failure mode for arkSVM. what's a good toy dataset in sklearn that violates linearity?",
+            "why_important": "Key prompt to resolve issues regarding Task 3.2"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "write python code to generate make_circles with some noise.",
+            "why_important": "Key prompt to resolve issues regarding Task 3.2"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "how do i define 'expert advice' for the inner circle if the model only understands straight lines?",
+            "why_important": "Key prompt to resolve issues regarding Task 3.2"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "why is the error 47% on make_circles?",
+            "why_important": "Key prompt to resolve issues regarding Task 3.2"
+        },
+        {
+            "rank": 5,
+            "interaction_id": 5,
+            "prompt": "how do i plot the decision boundary with plt.contourf?",
+            "why_important": "Key prompt to resolve issues regarding Task 3.2"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

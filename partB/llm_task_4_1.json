@@ -1,0 +1,114 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Styling PDF",
+            "prompt": "i need to write the report in IEEE format. how do i do a double column layout in markdown to pdf?",
+            "llm_response_used": "Partially",
+            "response_summary": "Use CSS column-count in the markdown header.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 4.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Terminal workflow",
+            "prompt": "what is the terminal command to convert markdown to pdf using npx md-to-pdf?",
+            "llm_response_used": "Partially",
+            "response_summary": "npx -y md-to-pdf report.md",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 4.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Formatting images",
+            "prompt": "how do i embed local images from the results folder into the markdown?",
+            "llm_response_used": "Partially",
+            "response_summary": "Use basic markdown image tags like ![alt](path).",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 4.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Output JSON representation.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 4.1",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "i need to write the report in IEEE format. how do i do a double column layout in markdown to pdf?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.1"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "what is the terminal command to convert markdown to pdf using npx md-to-pdf?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.1"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "how do i embed local images from the results folder into the markdown?",
+            "why_important": "Key prompt to resolve issues regarding Task 4.1"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "why_important": "Key prompt to resolve issues regarding Task 4.1"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

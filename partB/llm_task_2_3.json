@@ -1,0 +1,135 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Analyzing gap",
+            "prompt": "my SVM baseline is getting 8% but the paper got 30%. how do i honestly explain this gap?",
+            "llm_response_used": "Partially",
+            "response_summary": "Breast cancer is much cleaner data than Pima diabetes.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Formatting",
+            "prompt": "how do i make a markdown comparison table in jupyter?",
+            "llm_response_used": "Partially",
+            "response_summary": "Provided markdown table format.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Drafting checklist",
+            "prompt": "what goes into a good reproducibility checklist for ML?",
+            "llm_response_used": "Partially",
+            "response_summary": "Seeds, versions, data split sizes, hyperparameters.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.3",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Environment logging",
+            "prompt": "write a python snippet to print numpy and sklearn versions.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided import sys; print(np.__version__) script.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.3",
+            "code_used_verbatim": true,
+            "student_modification": "Code was fine, used it directly without changes."
+        },
+        {
+            "interaction_id": 5,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Output JSON representation.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.3",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "my SVM baseline is getting 8% but the paper got 30%. how do i honestly explain this gap?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.3"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "how do i make a markdown comparison table in jupyter?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.3"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "what goes into a good reproducibility checklist for ML?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.3"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "write a python snippet to print numpy and sklearn versions.",
+            "why_important": "Key prompt to resolve issues regarding Task 2.3"
+        },
+        {
+            "rank": 5,
+            "interaction_id": 5,
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "why_important": "Key prompt to resolve issues regarding Task 2.3"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "student_metadata": {
+        "name": "Raman Luhach",
+        "roll_number": "230107",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-12"
+    },
+    "llm_tools_used": [
+        {
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "provider": "OpenAI"
+        },
+        {
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "provider": "Anthropic"
+        }
+    ],
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Checking dataset validity",
+            "prompt": "can i use the breast cancer dataset from sklearn instead of diabetes for my reproduce task?",
+            "llm_response_used": "Partially",
+            "response_summary": "Yes, it's a standard UCI dataset.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Designing advice",
+            "prompt": "how do i write polyhedral advice for breast cancer? like feature > threshold?",
+            "llm_response_used": "Partially",
+            "response_summary": "Use simple feature thresholds, e.g., radius > mean means class 1.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 3,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Coding data pipeline",
+            "prompt": "write python code to load the breast cancer dataset and apply standard scaler.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided standard sklearn code.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": true,
+            "student_modification": "The code given was correct, no changes made. I just renamed the output to X_scaled for clarity."
+        },
+        {
+            "interaction_id": 4,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Coding advice matrices",
+            "prompt": "write numpy matrices for 4 simple rules based on feature means.",
+            "llm_response_used": "Yes",
+            "response_summary": "Provided matrix templates.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": true,
+            "student_modification": "Adjusted the specific threshold values slightly to introduce errors for the model to refine."
+        },
+        {
+            "interaction_id": 5,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Debugging Python",
+            "prompt": "why am i getting ModuleNotFoundError for numpy in jupyter but it works in terminal?",
+            "llm_response_used": "Partially",
+            "response_summary": "You need to select the correct kernel or install it in your virtual environment.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 6,
+            "date": "2026-03-12",
+            "tool_name": "ChatGPT",
+            "model": "GPT-4o",
+            "purpose": "Coding saving mechanism",
+            "prompt": "what is the command to save the preprocessed data?",
+            "llm_response_used": "Yes",
+            "response_summary": "Use np.savez.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": true,
+            "student_modification": "Code was used as provided but I updated my specific file path."
+        },
+        {
+            "interaction_id": 7,
+            "date": "2026-03-12",
+            "tool_name": "Claude",
+            "model": "Claude 3.5 Sonnet",
+            "purpose": "Compiling history",
+            "prompt": "give me the json of whatever is discused till now in a json format",
+            "llm_response_used": "Partially",
+            "response_summary": "Formatted the prompt history.",
+            "student_verification": "Verified logic and tested locally.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "can i use the breast cancer dataset from sklearn instead of diabetes for my reproduce task?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.1"
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "how do i write polyhedral advice for breast cancer? like feature > threshold?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.1"
+        },
+        {
+            "rank": 3,
+            "interaction_id": 3,
+            "prompt": "write python code to load the breast cancer dataset and apply standard scaler.",
+            "why_important": "Key prompt to resolve issues regarding Task 2.1"
+        },
+        {
+            "rank": 4,
+            "interaction_id": 4,
+            "prompt": "write numpy matrices for 4 simple rules based on feature means.",
+            "why_important": "Key prompt to resolve issues regarding Task 2.1"
+        },
+        {
+            "rank": 5,
+            "interaction_id": 5,
+            "prompt": "why am i getting ModuleNotFoundError for numpy in jupyter but it works in terminal?",
+            "why_important": "Key prompt to resolve issues regarding Task 2.1"
+        }
+    ],
+    "student_declaration": {
+        "student_verification": "I verify that all LLM interactions for this task have been logged accurately.",
+        "declaration": "I declare that all LLM usage for this task has been fully disclosed.",
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage.",
+        "understanding_acknowledged": true,
+        "signature": "Raman Luhach",
+        "date": "2026-03-12"
+    }
+}
